@@ -1,0 +1,14 @@
+body {
+	height: auto;
+}
+
+div#wrapper {
+	min-height: 10em;
+	display: table-cell;
+	vertical-align: middle;
+}
+p {
+	text-align: center;	
+	font-family:Verdana,Geneva,'DejaVu Sans',sans-serif;
+	font-size: 500%;
+}
