@@ -1,19 +1,18 @@
 body {
-	width: 960px;
-	text-align:center; /* for IE */
-	margin: 10px auto; /* for the rest */
+	max-width: 960px;
+	margin-left: 5em;
+	padding: 0;
 	background: #111142; 
-	background-image: url('heypodopenguin.png');
-	background-repeat:no-repeat;
-	background-attachment:fixed;
-	background-position:90% 90%;
 	font-family: verdana, helvetica, arial, sans-serif;
-	margin-left: 3em;
+}
+
+div {
+	padding: 0;
 }
 
 div#wrapper {
-text-align:left;
-width:600px;
+	min-width: 960px;
+	width:100%;
 }
 
 
@@ -22,8 +21,15 @@ a:active {text-decoration: none; }
 a:hover {text-decoration: none; color: #FF4C00;}
 
 div#maincontent {
+	max-width: 600px;
 	color: white;
 	font-size: 2em;
+}
+div#rightsidebar {
+	max-width: 160px;
+	float: right;
+	position: relative;
+	padding-left: 1em;
 }
 
 div#footer {
