@@ -26,10 +26,11 @@ div#maincontent {
 	font-size: 2em;
 }
 div#rightsidebar {
-	max-width: 160px;
+	max-width: 100px;
 	float: right;
 	position: relative;
 	padding-left: 1em;
+	margin-top: 300px;
 }
 
 div#footer {
