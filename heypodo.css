@@ -3,11 +3,29 @@ body {
 	margin-left: 5em;
 	padding: 0;
 	background: #111142; 
-	font-family: verdana, helvetica, arial, sans-serif;
+	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
 div {
 	padding: 0;
+}
+#header ul {
+	margin: 0;
+	paddin: 0;
+	float: right;
+}
+#header ul li{
+	display: inline;
+}
+
+h1 {font-size: 181%; font-weight:lighter;}
+#header li {
+	color: white;
+	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+	font-size: .8em;
+	padding: 0;
+	margin: 0;
+	list-style-type:none;
 }
 
 div#wrapper {
@@ -28,9 +46,9 @@ div#maincontent {
 div#rightsidebar {
 	max-width: 100px;
 	float: right;
-	position: relative;
-	padding-left: 1em;
-	margin-top: 300px;
+	position: absolute;
+	left: 860px;
+	top: 400px;
 }
 
 div#footer {
