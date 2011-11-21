@@ -1,58 +1,13 @@
-body {
-	max-width: 960px;
-	margin-left: 5em;
-	padding: 0;
-	background: #111142; 
-	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-}
-
-div {
-	padding: 0;
-}
-#header ul {
-	margin: 0;
-	paddin: 0;
-	float: right;
-}
-#header ul li{
-	display: inline;
-}
-
-h1 {font-size: 181%; font-weight:lighter;}
-#header li {
-	color: white;
-	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-	font-size: .8em;
-	padding: 0;
-	margin: 0;
-	list-style-type:none;
-}
-
-div#wrapper {
-	min-width: 960px;
-	width:100%;
-}
-
-
-a:link, a:visited {text-decoration: none; color: white;}
-a:active {text-decoration: none; }
-a:hover {text-decoration: none; color: #FF4C00;}
-
-div#maincontent {
-	max-width: 600px;
-	color: white;
-	font-size: 2em;
-}
-div#rightsidebar {
-	max-width: 100px;
-	float: right;
-	position: absolute;
-	left: 860px;
-	top: 400px;
-}
-
-div#footer {
-	font-family: monaco;
-	color: white;
-	font-size: .5em;
-}
+body { width: 950px; margin: auto; padding: 0; background: url(background.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='background.jpg', sizingMethod='scale'); -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='background.jpg', sizingMethod='scale')"; font-family: "Helvetica Neue", Helvetica, sans-serif; }
+div { padding: 0; }
+#container { min-width: 960px; width:100%; margin: auto; }
+#header ul { margin:20px 0 0 0; padding: 0; float: right; }
+#header ul li{ display: inline; }
+#header li { color: white; font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif; font-size: .8em; padding: 0; margin: 0; list-style-type: none; }
+h1 { font-size: 1.8em; font-weight:100; margin: 0; line-height: 1em }
+a:link, a:visited { text-decoration: none; color: white; }
+a:active { text-decoration: none; }
+a:hover { text-decoration: none; color: #FF4C00; }
+#maincontent { max-width: 590px; margin-right: 40px; color: white; font-size: 2em; background: rgba(0, 0, 0, 0.5); padding: 40px; clear: both; border-radius: 10px; -moz-border-radius: 10px; }
+#maincontent p {font-size: .9em; font-weight: 100; line-height: 1.23em; margin: 1.23em 0 0 0; letter-spacing: 0.1em}
+#footer { font-family: Monaco, "Lucida Console", Consolas, "Andale Mono", "Bitstream Vera Sans Mono", "Lucida Sans Typewriter", "DejaVu Sans Mono", monospace; color: white; font-size: .5em; margin-top: 40px; background: rgba(0, 0, 0, 0.5); width: 370px; padding: 20px 40px; border-radius: 10px; -moz-border-radius: 10px; }
