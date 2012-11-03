@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang='en-US'>
+<!--[if IE]><![endif]-->
+<!--[if lt IE 7 ]>       <html lang="en" class="no-js ie6"><![endif]-->
+<!--[if IE 7 ]>          <html lang="en" class="no-js ie7"><![endif]-->
+<!--[if IE 8 ]>          <html lang="en" class="no-js ie8"><![endif]-->
+<!--[if IE 9 ]>          <html lang="en" class="no-js ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><html lang="en" class="no-js">    <![endif]-->
+<head>
+  <title>Hey Podo</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Ed Podojil: English teacher turned self-taught programmer with a hint of blog.">
+  <link rel="stylesheet" media="screen" href="heypodo.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <script type="text/javascript">
+/*
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-27230174-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+*/
+    var allThingsData = {
+      timeAtLoad : new Date().getHours(),
+      state : false,
+      viewing: null
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Hey,<br /> Podo.</h1>
+    </header>
+    <nav>
+      <ul>
+        <li class="h-icon h-icon-about" data-attr="about"><span>About</span></li>
+        <li class="h-icon h-icon-blog"><span>Blog</span></li>
+        <li class="h-icon h-icon-portfolio" data-attr="portfolio"><span>Portfolio</span></li>
+        <ul class="hidden portfolio">
+          <a href="http://www.animoto.com/"><li>In action</li></a>
+          <a href="http://www.github.com/podopie"><li>Github</li></a>
+        </ul>
+        <a href="http://howibegan.heypodo.com/"><li class="h-icon h-icon-ltp"><span>Learning to Program</span></li></a>
+        <li class="h-icon h-icon-findme" data-attr="findme"><span>Find me</span></li>
+        <ul class="hidden findme">
+          <a href="https://www.facebook.com/edward.podojil"><li>Facebook</li></a>
+          <a href="http://www.twitter.com/podopie"><li>Twitter</li></a>
+          <a href="http://www.linkedin.com/in/edpodojil"><li>Linkedin</li></a>
+          <a href="mailto:epodojil+heypodo@gmail.com"><li>Email</li></a>
+        </ul>
+      </ul>
+    </nav>
+
+    <div class="about hidden">
+      <h3>Hey there! My name is Ed Podojil, and I do data.</h3>
+      <p>Currently I am the Analytics Engineer at
+        <a href="http://www.animoto.com/"> Animoto</a>. Previously, I taught 9-12 English at
+        <a href="http://www.vhs.nvusd.k12.ca.us/"> Vintage High School</a> and directed their percussion program from
+        <a href="http://www.youtube.com/watch?v=0nGQtsJbPlk"> 2009</a> to
+        <a href="http://www.youtube.com/watch?v=jmOWkk5GGNM"> 2011</a>.
+      </p>
+      <h3>The language bucketlist:</h3>
+      <p class="languages">HTML/CSS/JavaScript, Ruby, Ruby on Rails, Python/NumPy/SciPy/PANDAS, R, SQL, with the most limited knowledge of Java known to man</p>
+    </div>
+  </div>
+</body>
+</html>
+<script>
+  $('.h-icon').click(function() {
+    allThingsData['viewing'] = ($(this).data('attr'));
+    runFunction();
+  })
+  var runFunction = function(){
+    console.log(allThingsData);
+    if (allThingsData['state'] === false) {
+      $('nav').animate({ top: 100 }, function() {
+        $('.' + allThingsData['viewing']).removeClass('hidden');
+        $('nav').addClass('fixed');
+      })
+      allThingsData['state'] = true;
+    } else if (allThingsData['state'] === true) {
+      $('.' + allThingsData['viewing']).addClass('hidden');
+      $('nav').removeClass('fixed');
+      allThingsData['state'] = false;
+    }
+  }
+</script>
