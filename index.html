@@ -1,73 +1,118 @@
 <!DOCTYPE html>
 <html lang='en-US'>
 <!--[if IE]><![endif]-->
-<!--[if lt IE 7 ]> 				<html lang="en" class="no-js ie6">    <![endif]-->
-<!--[if IE 7 ]>						<html lang="en" class="no-js ie7">    <![endif]-->
-<!--[if IE 8 ]>						<html lang="en" class="no-js ie8">    <![endif]-->
-<!--[if IE 9 ]>						<html lang="en" class="no-js ie9">    <![endif]-->
-<!--[if (gt IE 9)|!(IE)]>	<html lang="en" class="no-js">  			<![endif]-->
+<!--[if lt IE 7 ]>       <html lang="en" class="no-js ie6"><![endif]-->
+<!--[if IE 7 ]>          <html lang="en" class="no-js ie7"><![endif]-->
+<!--[if IE 8 ]>          <html lang="en" class="no-js ie8"><![endif]-->
+<!--[if IE 9 ]>          <html lang="en" class="no-js ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><html lang="en" class="no-js">    <![endif]-->
 <head>
-	
-	<title>Hey Podo</title>
-	
-	<meta charset="UTF-8">
-	<meta name="description" content="Ed Podojil: English teacher turned self-taught programmer with a hint of blog.">
-	
-	<link rel="stylesheet" media="screen" href="heypodo.css">
-	
-	<script type="text/javascript">
+  <title>Hey Podo</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Ed Podojil: English teacher turned self-taught programmer with a hint of blog.">
+  <link rel="stylesheet" media="screen" href="cards.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-27230174-1']);
+    _gaq.push(['_trackPageview']);
 
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-27230174-1']);
-	  _gaq.push(['_trackPageview']);
-
-	  (function() {
-	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
-
-	</script>
-	
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    var allThingsData = {
+      timeAtLoad : new Date().getHours(),
+      state : false,
+      viewing: null
+    }
+  </script>
 </head>
-
 <body>
-	
-	<div id="container">
-
-		<div id="header">
-			<ul>
-				<li><a href="https://www.facebook.com/profile.php?id=9000104">Facebook</a> |</li>
-				<li><a href="http://www.twitter.com/podopie">Twitter</a> |</li>
-				<li><a href="http://www.linkedin.com/in/edpodojil">Linkedin</a> |</li>
-				<li><a href="#">Portfolio</a></li>
-			</ul>
-		</div>
-
-		<div id="maincontent">
-			<h1>Hey there! My name is Ed Podojil.</h1>
-			<p>I'm a front-end developer and work as a software engineer at
-				<a href="http://www.animoto.com/">Animoto</a>. Previously, I taught 9-12 English at 
-				<a href="http://www.vhs.nvusd.k12.ca.us/">Vintage High School</a> and directed their percussion program from
-				<a href="http://www.youtube.com/watch?v=0nGQtsJbPlk">2009</a> to
-				<a href="http://www.youtube.com/watch?v=jmOWkk5GGNM">2011</a>. This summer I
-				<a href="http://pine.fm/LearnToProgram/">learned how to program</a> and 
-				<a href="http://howibegan.heypodo.com">kept a blog</a> about my adventures.
-			</p>
-			<p>Feel free to look at some of my old and odd projects on
-				<a href="http://www.github.com/podopie">github</a>, grab my 
-				<a href="resume.pdf">resume</a>, or send over a <a href="mailto:epodojil@gmail.com">friendly email</a>.
-			</p>
-		</div>
-
-	</div>
-
-	<div id="footer">
-		<p>say hey back: <a href="mailto:epodojil@gmail.com">epodojil (at) gmail (dot) com</a>. &copy; 2011 heypodo</p>
-		<p>background photo: Cousin Kelly Rini Andrew's wedding</p>
-	</div>
-
+  <div class="card">
+    <header>
+      <div class="overlay">
+        <h1>Ed Podojil</h1>
+      </div>
+    </header>
+    <nav>
+      <ul>
+        <li class="h-icon h-icon-about active" data-attr="about">About</li>
+        <li class="h-icon h-icon-blog">Blog</li>
+        <li class="h-icon h-icon-portfolio" data-attr="portfolio">Portfolio</li>
+        <li class="h-icon h-icon-findme" data-attr="findme">Find me</li>
+      </ul>
+    </nav>
+    <section class="body">
+      <article class="about position position3">
+        <h2>I Do Data Things</h2>
+        <p><strong>Currently:</strong> Analytics Engineer at Animoto</p>
+        <p><strong>Previously:</strong> Front End Engineer at Animoto</p>
+        <p><strong>More previously:</strong> English Teacher and Percussion Director at Vintage High School</p>
+        <p><strong>Before that:</strong> Student at UC Davis (MA), UConn (BA), percussion teacher at several Connecticut high schools</p>
+        <h2>The Language Bucketlist</h2>
+        <p class="languages">HTML/CSS/JavaScript, Ruby, Ruby on Rails, Python/NumPy/SciPy/PANDAS, R, SQL, and the most limited knowledge of Java known to man</p>
+      </article>
+      <article class="blogs position position4">
+        <h2>Current blog</h2>
+        <p><a>Ed talks about things</a> (coming soon)</p>
+        <h2>Old blog</h2>
+        <p><a href="http://howibegan.heypodo.com/">How I learned to Program Over a Summer</a></p>
+      </article>
+      <article class="portfolio position position5">
+        <h2>Portfolio</h2>
+        <p><a href="http://www.github.com/podopie">Github</a></p>
+        <p><a href="http://www.animoto.com/">Animoto</a></p>
+        <p><a href="resume.pdf">Resume</a></p>
+        <h2>Drums</h2>
+        <p><a href="http://www.youtube.com/watch?v=0nGQtsJbPlk">Vintage High 2010, Music from "Up", Champions</a></p>
+        <p><a href="http://www.youtube.com/watch?v=jmOWkk5GGNM">Vintage High 2011, Rhapsody, 1st Place</a></p>
+      </article>
+      <article class="findme position position6">
+        <h2>Find Me</h2>
+        <p><a href="mailto:epodojil+heypodo@gmail.com">Email</a></p>
+        <p><a href="https://www.facebook.com/edward.podojil">Facebook</a></p>
+        <p><a href="http://www.twitter.com/podopie">Twitter</a></p>
+        <p><a href="http://www.linkedin.com/in/edpodojil">Linkedin</a></p>
+      </article>
+      <article class="cover cover-left"></article>
+      <article class="cover cover-right"></article>
+    </section>
+  </div>
+  <footer>Copyright 2012 HeyPodo. Thanks, Google, for the inspiration.</footer>
 </body>
-
 </html>
-
+<script>
+$('.h-icon').click(function(){
+  var activeState = $(this).html().split(' ').join('').toLowerCase();
+  $('.h-icon').removeClass('active');
+  $(this).addClass('active');
+  $('.position').removeClass(function (index, css) {
+    return (css.match (/\bposition[0-9]$/g) || []).join(' ');
+  });
+  if (activeState === 'about') {
+    $('.about').addClass('position3');
+    $('.blogs').addClass('position4');
+    $('.portfolio').addClass('position5');
+    $('.findme').addClass('position6');
+  } else if (activeState === 'blog') {
+    $('.about').addClass('position2');
+    $('.blogs').addClass('position3');
+    $('.portfolio').addClass('position4');
+    $('.findme').addClass('position5');
+  } else if (activeState === 'portfolio') {
+    $('.about').addClass('position1');
+    $('.blogs').addClass('position2');
+    $('.portfolio').addClass('position3');
+    $('.findme').addClass('position4');
+  } else if (activeState === 'findme') {
+    $('.about').addClass('position0');
+    $('.blogs').addClass('position1');
+    $('.portfolio').addClass('position2');
+    $('.findme').addClass('position3');
+  } else {
+    console.log('Error: can\'t place' + activeState);
+  }
+})
+</script>
