@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang='en-US'>
+<!--[if IE]><![endif]-->
+<!--[if lt IE 7 ]>       <html lang="en" class="no-js ie6"><![endif]-->
+<!--[if IE 7 ]>          <html lang="en" class="no-js ie7"><![endif]-->
+<!--[if IE 8 ]>          <html lang="en" class="no-js ie8"><![endif]-->
+<!--[if IE 9 ]>          <html lang="en" class="no-js ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><html lang="en" class="no-js">    <![endif]-->
+<head>
+  <title>Android Home Demo</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="A Android homescreen demo built with css3 and JavaScript">
+  <link rel="stylesheet" media="screen" href="android.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="screen screen-a screen0">
+      <div class="folder">screen 0</div>
+    </div>
+    <div class="screen screen-b screen1">
+      <div class="folder">screen 1</div>
+    </div>
+    <div class="screen screen-c screen2">
+      <div class="clock">
+        <span class="hour"></span>
+        <span class="minute"></span>
+      </div>
+      <div class="folder-b">screen 2</div>
+    </div>
+    <div class="screen screen-d screen3">
+      <div class="folder">screen 3</div>
+    </div>
+    <div class="screen screen-e screen4">
+      <div class="folder">screen 4</div>
+    </div>
+    <div class="leftClick"></div>
+    <div class="rightClick"></div>
+  </div>
+</body>
+</html>
+<script>
+var hours = new Date().getHours();
+if (hours > 12) { hours = hours - 12 };
+hours = hours * 30;
+var minutes = new Date().getMinutes();
+minutes = minutes * 6;
+$('.hour').css({WebkitTransform: 'rotate(' + hours + 'deg)'});
+$('.minute').css({WebkitTransform: 'rotate(' + minutes + 'deg)'});
+
+var i = 2;
+$('.leftClick').click(function() {
+  i = i - 1;
+  if (i <= 0) {
+    i = 0;
+  }
+  lol(i);
+})
+$('.rightClick').click(function() {
+  i = i + 1;
+  if (i >= 4) {
+    i = 4;
+  }
+  lol(i);
+})
+var lol = function(i){
+  percent = i * 20;
+  $('.container').css({'background-position': percent + '%'});
+  $('.screen').removeClass(function (index, css) {
+    return (css.match (/\bscreen[0-9]$|\bscreen-[0-9]$/g) || []).join(' ');
+  });
+  var a = i -2,
+    b = i - 1,
+    c = i,
+    d = i + 1,
+    e = i + 2;
+    console.log(a);
+    console.log(b);
+    console.log(c);
+    console.log(d);
+    console.log(e);
+  $('.screen-a').addClass('screen' + a);
+  $('.screen-b').addClass('screen' + b);
+  $('.screen-c').addClass('screen' + c);
+  $('.screen-d').addClass('screen' + d);
+  $('.screen-e').addClass('screen' + e);
+}
+</script>
