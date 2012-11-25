@@ -9,7 +9,7 @@ body {
   margin: auto;
 }
 .container {
-  background: url(images/android.jpg) 40% center;
+  background: url(android.jpg) 40% center;
   width: 480px;
   margin: auto;
   height: 768px;

@@ -26,7 +26,7 @@ header {
   width:470px;
   height: 230px;
   position: relative;
-  background: url(background-mini.jpg) no-repeat center center;
+  background: url(/public/images/background-mini.jpg) no-repeat center center;
 }
 header .overlay {
   background: #000;
@@ -70,6 +70,7 @@ h1, h2 {
 p, ul li {
   font-weight: 300;
   color: #777;
+  line-height: 1.5;
 }
 strong {
   font-weight: 400;
@@ -94,9 +95,8 @@ article {
   float: left;
   overflow: hidden;
 }
-article h2, p {
+article h2, article p {
   margin: 12px 25px;
-  line-height: 1.4;
 }
 .position {
   width: 470px;
@@ -144,4 +144,20 @@ article h2, p {
 footer {
   font-size: 13px;
   text-align: center;
+}
+
+/* Blog stuff */
+.blog {
+  width: 1140px;
+  margin-top: 20px;
+}
+.secondary {
+  font-size: 18px;
+}
+.post, .home-posts {
+  margin: 20px 0;
+}
+.post p,
+.home-posts li {
+  margin: 12px 0;
 }
