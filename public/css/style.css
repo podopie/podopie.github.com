@@ -161,3 +161,9 @@ footer {
 .home-posts li {
   margin: 12px 0;
 }
+/* 404 */
+.fourohfour p {
+  text-align: center;
+  font-family:Verdana,Geneva,'DejaVu Sans',sans-serif;
+  font-size: 500%;
+}
