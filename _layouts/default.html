@@ -10,6 +10,7 @@
   <title>{{ page.title }}</title>
   <meta charset="UTF-8">
   <meta name="description" content="Ed Podojil: English teacher turned self-taught programmer with a hint of blog.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="stylesheet" media="screen" href="/public/css/style.css">
   <script type="text/javascript">
     var _gaq = _gaq || [];
@@ -29,8 +30,10 @@
   </script>
 </head>
 <body class="blog">
-  <h1><a href="/">Hey, Podo</a> <span class="secondary"> -- <a href="/blog/index.html">Blog</a></span></h1>
-  {{ content }}
-  <footer>Copyright 2012 HeyPodo.</footer>
+  <div class="blog-container">
+    <h1><a href="/">Hey, Podo</a> <span class="secondary"> -- <a href="/blog/index.html">Blog</a></span></h1>
+    {{ content }}
+    <footer>Copyright 2012 HeyPodo.</footer>
+  </div>
 </body>
 </html>

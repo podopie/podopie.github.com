@@ -148,8 +148,10 @@ footer {
 
 /* Blog stuff */
 .blog {
-  width: 1140px;
-  margin-top: 20px;
+  width: 710px;
+}
+.blog-container {
+  margin: 20px;
 }
 .secondary {
   font-size: 18px;
