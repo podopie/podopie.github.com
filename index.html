@@ -10,20 +10,9 @@
   <title>Hey Podo</title>
   <meta charset="UTF-8">
   <meta name="description" content="Ed Podojil: English teacher turned self-taught programmer with a hint of blog.">
+  <meta name="keywords" content="software, engineer, data, analytics, programming, blog, bacon">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="stylesheet" media="screen" href="/public/css/style.css">
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-27230174-1']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  </script>
 </head>
 <body>
   <div class="card">
@@ -79,38 +68,19 @@
     </section>
   </div>
   <footer>Copyright 2013 HeyPodo.</footer>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript" src="/public/js/javascript.js"</script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-27230174-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
 </body>
 </html>
-<script>
-$('.h-icon').click(function(){
-  var activeState = $(this).html().split(' ').join('').toLowerCase();
-  $('.h-icon').removeClass('active');
-  $(this).addClass('active');
-  $('.position').removeClass(function (index, css) {
-    return (css.match (/\bposition[0-9]$/g) || []).join(' ');
-  });
-  if (activeState === 'about') {
-    $('.about').addClass('position3');
-    $('.blogs').addClass('position4');
-    $('.portfolio').addClass('position5');
-    $('.findme').addClass('position6');
-  } else if (activeState === 'blog') {
-    $('.about').addClass('position2');
-    $('.blogs').addClass('position3');
-    $('.portfolio').addClass('position4');
-    $('.findme').addClass('position5');
-  } else if (activeState === 'portfolio') {
-    $('.about').addClass('position1');
-    $('.blogs').addClass('position2');
-    $('.portfolio').addClass('position3');
-    $('.findme').addClass('position4');
-  } else if (activeState === 'findme') {
-    $('.about').addClass('position0');
-    $('.blogs').addClass('position1');
-    $('.portfolio').addClass('position2');
-    $('.findme').addClass('position3');
-  } else {
-//  console.log('Error: can\'t place' + activeState);
-  }
-})
-</script>
+

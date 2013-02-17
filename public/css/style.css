@@ -148,7 +148,7 @@ footer {
 
 /* Blog stuff */
 .blog {
-  width: 710px;
+  width: 590px;
 }
 .blog-container {
   margin: 20px;
@@ -162,6 +162,15 @@ footer {
 .post p,
 .home-posts li {
   margin: 12px 0;
+}
+.post h1,
+.home-posts h1 {
+  font-weight: 400;
+}
+.post h2 {
+  margin: 18px 0;
+  line-height: 1.4;
+  font-weight: 400;
 }
 /* 404 */
 .fourohfour p {
