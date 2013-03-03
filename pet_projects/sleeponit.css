@@ -1,0 +1,37 @@
+/* Reset all the things */
+body, div, header, nav, footer, p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+body {
+  width: 100%;
+  margin: auto;
+  background-color: #efefef;
+  color: #121212;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+.container {
+  width: 480px;
+  margin: 0 auto;
+  text-align: center;
+}
+h1 {
+  font-size: 58px;
+  text-transform: uppercase;
+}
+p {
+  font-size: 21px;
+  line-height: 1.8;
+}
+#button {
+  background-color: #CC6A96;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  cursor: pointer;
+  margin: 15px 0;
+}
+#button:hover, #button:active {
+  background-color: #FA82B8;
+}
