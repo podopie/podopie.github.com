@@ -12,7 +12,7 @@ body {
   font-family: "Open Sans Condensed", sans-serif;
 }
 .container {
-  width: 480px;
+  width: 320px;
   margin: 0 auto;
   text-align: center;
 }
@@ -21,7 +21,7 @@ h1 {
   text-transform: uppercase;
 }
 p {
-  font-size: 21px;
+  font-size: 20px;
   line-height: 1.8;
 }
 #button {
@@ -34,4 +34,7 @@ p {
 }
 #button:hover, #button:active {
   background-color: #FA82B8;
+}
+.showTimeI {
+  font-size: 32px;
 }

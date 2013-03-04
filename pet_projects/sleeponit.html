@@ -17,13 +17,13 @@
 <body>
   <div class="container">
     <h1>sleep on it</h1>
-    <p>Click below and find the best time to wake up.</p>
+    <p><strong>Click below for the best times to wake.</strong></p>
     <p id="button">Nap Time!</p>
     <p id="showTime"></p>
-    <p id="showTime_0"></p>
-    <p id="showTime_1"></p>
-    <p id="showTime_2"></p>
-    <p id="showTime_3"></p>
+    <p id="showTime_0" class="showTimeI"></p>
+    <p id="showTime_1" class="showTimeI"></p>
+    <p id="showTime_2" class="showTimeI"></p>
+    <p id="showTime_3" class="showTimeI"></p>
   </div>
 </body>
 <script type="text/javascript">
@@ -37,7 +37,7 @@ var distances = ['1.9 hours', '3.6 hours', '5.2 hours', '7 hours'];
 document.getElementById('button').onclick = function(){
   sleepTime = addMinutes(new Date(), 15);
   wakeTimes = [addMinutes(sleepTime, 100), addMinutes(sleepTime, 200), addMinutes(sleepTime, 300), addMinutes(sleepTime, 400)];
-  document.getElementById('showTime').innerHTML = '<strong>Pick below, and see you in the morning!</strong>';
+  document.getElementById('showTime').innerHTML = '<strong>Pick one, and sweet dreams!</strong>';
   for (i=0;i<wakeTimes.length;i++) {
     wakeTimes[i] = toCleanerLocalTime(wakeTimes[i].toLocaleTimeString());
     document.getElementById('showTime_' + i).innerHTML = wakeTimes[i] + ' (' + distances[i] + ')';
