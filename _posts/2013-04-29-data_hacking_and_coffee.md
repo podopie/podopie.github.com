@@ -39,7 +39,10 @@ Tf-idf was not too difficult to implement in JavaScript, though I conjoined with
     var tf_idf = {};
     Tastings.find().forEach(function(i) {
       total = Cuppings.find().count();
-      t = Cuppings.find({'cup' : {$in : cupping_array}, 'tastes' : i.taste}).count();
+      t = Cuppings.find({
+        'cup' : {$in : cupping_array},
+        'tastes' : i.taste
+      }).count();
       d = Cuppings.find({'tastes' : i.taste}).count() + 1;
       idf = Math.log(total/d);
       tf_idf[i.taste] = idf * t;
