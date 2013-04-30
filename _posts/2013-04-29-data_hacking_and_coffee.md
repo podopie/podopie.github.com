@@ -12,10 +12,12 @@ Preparation
 We built a small front end web app using Meteor to store tastings data in MongoDB. We then made a lot of coffee over the course of two mornings finishing roughly 36oz of our 48oz of beans, and about 80 data samples in total). Given our Stumptown preferences at the office, we trialed two blends, (Hair Bender and Holler Mountain) and two single origins (Indonesia Sulawesi Toarco Toraja and Guatemala Finca El Injerto). 
 
 Each cupping had a thumbs up/thumbs down for four impressions:
+
 * overall taste,
 * aroma,
 * acidity,
 * and body
+
 Then, out of 25 prepicked words based on a few websites for describing flavors in coffee, each taster picked as many words as they wanted to describe their tasting. They didn't know what bean they were trying, but were informed around brewing methods each day.
 
 After Cuppings - Data Transposition
@@ -67,10 +69,10 @@ Bean Results
 ------------
 
 Given the top three words that defined each bean, I used the impressions and flavor scores to see which bean had the most favorable tastes:
-* Holler Mountain won best espresso as people favored its deep and smooth flavor.
-* Hair Bender won top AeroPress brew, mostly for its unique complex flavors contained with a light touch.
-* Indonesia Sulawesi Toarco Toraja won for pour over, based on the very powerful but earthy "in your face" taste many of us found it to have.
-* Guatemala Finca El Injerto came out on top as the favorite in the office, but primarily due to the fact that it tasted great independent of brewing method.
+* <strong>Holler Mountain</strong> won best espresso for its favored deep and smooth flavor.
+* <strong>Hair Bender</strong> won top AeroPress brew, mostly for its unique complex flavors contained with a light touch.
+* <strong>Indonesia Sulawesi Toarco Toraja</strong> won for pour over, based on the very powerful but earthy "in your face" taste many of us found it to have.
+* <strong>Guatemala Finca El Injerto</strong> came out on top as the favorite in the office, but primarily due to the fact that it tasted great independent of brewing method.
 
 Conclusions
 -----------
