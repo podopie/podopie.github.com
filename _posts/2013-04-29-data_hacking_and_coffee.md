@@ -9,7 +9,7 @@ This past week a coworker of mine and I decided to make coffee for everyone at o
 
 Preparation
 -----------
-We built a small front end web app using Meteor to store tastings data in MongoDB. We then made a lot of coffee over the course of two mornings finishing roughly 36oz of our 48oz of beans, and about 80 data samples in total). Given our Stumptown preferences at the office, we trialed four beans:
+We built a small front end web app using Meteor to store tastings data in MongoDB. Over the course of two mornings, we grinded and brewed roughly 36oz of our 48oz of beans, about 80 data samples in total. Given our Stumptown preferences at the office, we trialed four of their beans:
 
 * Hair Bender (blend) 
 * Holler Mountain (blend) 
@@ -30,7 +30,7 @@ Each cup (4 beans x 3 methods = 12 cups) had a thumbs up/thumbs down for four im
 * and body
 
 
-Then, out of 25 prepicked words based on from websites for describing flavors in coffee, each taster picked as many words as they wanted to describe their tasting. They didn't know what bean they were trying, but were informed around brewing methods each day.
+Then, out of 25 prepicked words from assorted websites that describe flavors of coffee, each taster picked as many words as they wanted to describe their tasting. They didn't know what bean they were trying, but were informed around brewing methods each day.
 
 You can follow along the user experience, including all the words we used, <a href="http://coffeemoto.meteor.com">here</a>.
 
@@ -79,7 +79,7 @@ Bean Results
 ------------
 
 Given the top three words that defined each bean, I used the impressions and flavor scores to see which bean had the most favorable tastes:
-* **Holler Mountain** won best espresso for its favored deep and smooth flavor.
+* **Holler Mountain** won best espresso for its favored smooth and buttery flavor.
 * **Hair Bender** won top AeroPress brew, mostly for its unique complex flavors contained with a light touch.
 * **Indonesia Sulawesi Toarco Toraja** won for pour over, based on the very powerful but earthy "in your face" taste many of us found it to have.
 * **Guatemala Finca El Injerto** came out on top as the favorite in the office, but primarily due to the fact that it tasted great independent of brewing method.
@@ -88,6 +88,6 @@ Given the top three words that defined each bean, I used the impressions and fla
 Conclusions
 -----------
 
-Never forget the power of simple yes/no questions in your application. Simply by having my users describe coffee and give it a thumbs up or down, I was able to (very roughly) turnaround incredibly useful data for future coffee direction in the office. And I think eventually, we'll find our buttery chocolate herbal coffee bean (that is, until our tastes change).
+Never forget the power of simple yes/no questions in your application. Simply by having colleagues describe coffee and give a thumbs up or down, I was able to (very roughly) generate incredibly useful data for future coffee direction in the office. And I think eventually, we'll find our buttery chocolate herbal coffee bean (that is, until our tastes change).
 
 You can find all the code on <a href="http://www.github.com/podopie/coffeemoto">Github</a>.
