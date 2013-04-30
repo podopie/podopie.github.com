@@ -38,7 +38,7 @@ Analysis
 --------------------------
 Initially, I wanted to identify the value of a flavor, broken down by each impression type (0 to 1). To find an answer, I grouped cuppings by flavor and broke down the appropriate scores by averaging each impression. 
 
-<a href="/public/images/cuppings_data.png"><img src="/public/images/cuppings_data.png" width=550 height=172 /></a>
+<a href="/public/images/cuppings_data.png"> <img src="/public/images/cuppings_data.png" width="550" height="172" /> </a>
 
 On the results page (or the image above), the stacked bar graph represents "overall", "aroma", "acidity", and "body" (from dark brown to light brown, or bottom to top) for each possible flavor word. For example, chocolate got a near perfect score in all areas, and seemed to be the most favorable flavor. Bland scored very poorly, with a body score of practically 0. Pungent scored generally okay across all flavors, except "acidity," which scored very low. In general, I'd base impressions/flavors this way:
 
