@@ -164,6 +164,9 @@ footer {
 .home-posts li {
   margin: 12px 0;
 }
+.post li {
+  list-style-position: inside;
+}
 .post h1,
 .home-posts h1 {
   font-weight: 400;
