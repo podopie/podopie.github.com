@@ -42,37 +42,37 @@ Initially, I wanted to identify the value of a flavor, broken down by each impre
 
 On the results page (or the image above), the stacked bar graph represents "overall", "aroma", "acidity", and "body" (from dark brown to light brown, or bottom to top) for each possible flavor word. For example, chocolate got a near perfect score in all areas, and seemed to be the most favorable flavor. Bland scored very poorly, with a body score of practically 0. Pungent scored generally okay across all flavors, except "acidity," which scored very low. In general, I'd base impressions/flavors this way:
 
-* Words that ranked "positive" per impression: score of .7 or above (large rectangle)
-* Words that ranked "neutral" per impression: score of .4 to .6 (square rectangle)
-* Words that ranked "negative" per impression: score of .3 or below (small-nil rectangle)
+* A "positive" impression: score of .7 or above (large rectangle)
+* A "neutral" impression: score of .4 to .6 (square rectangle)
+* A "negative" impression: score of .3 or below (small-nil rectangle)
 
 
 I then determined which words best described which beans. I decided to use <a href="http://en.wikipedia.org/wiki/Tf%E2%80%93idf">tf-idf</a>, namely for its ability to (hopefully) find uniqueness of words in a given document; in this case, cuppings specific to a bean. This approach let me see how often words were used to describe beans, but also how often those same words were used to describe other beans as well. For example, bitter could have easily described all the beans, so it would have had a low uniqueness score for each bean. In the results, I found it interesting that even with the inverse counterweight, harsh still showed up for two different beans.
 
 Tf-idf wasn't too difficult to implement in JavaScript, though I conjoined with it a sorted object function commonly seen on StackOverflow. Code here (on Github, early on, in the coffeeMoto namespace):
 <pre>generateUniques: function(cupping_array) {
-    var tf_idf = {};
-    Tastings.find().forEach(function(i) {
-      total = Cuppings.find().count();
-      t = Cuppings.find({
-        'cup' : {$in : cupping_array},
-        'tastes' : i.taste
-      }).count();
-      d = Cuppings.find({'tastes' : i.taste}).count() + 1;
-      idf = Math.log(total/d);
-      tf_idf[i.taste] = idf * t;
-    })
-    var sortable = [];
-    for (var word in tf_idf) {
-      sortable.push([word, tf_idf[word]]);
-      sortable.sort(function(a, b) {return a[1] - b[1]});
-    }
-    unique_limit = []
-    unique_limit.push(sortable[sortable.length - 1][0])
-    unique_limit.push(sortable[sortable.length - 2][0])
-    unique_limit.push(sortable[sortable.length - 3][0])
-    return unique_limit;
+  var tf_idf = {};
+  Tastings.find().forEach(function(i) {
+    total = Cuppings.find().count();
+    t = Cuppings.find({
+      'cup' : {$in : cupping_array},
+      'tastes' : i.taste
+    }).count();
+    d = Cuppings.find({'tastes' : i.taste}).count() + 1;
+    idf = Math.log(total/d);
+    tf_idf[i.taste] = idf * t;
+  })
+  var sortable = [];
+  for (var word in tf_idf) {
+    sortable.push([word, tf_idf[word]]);
+    sortable.sort(function(a, b) {return a[1] - b[1]});
   }
+  unique_limit = []
+  unique_limit.push(sortable[sortable.length - 1][0])
+  unique_limit.push(sortable[sortable.length - 2][0])
+  unique_limit.push(sortable[sortable.length - 3][0])
+  return unique_limit;
+}
 </pre>
 
 Bean Results
@@ -80,7 +80,7 @@ Bean Results
 
 Given the top three words that defined each bean, I used the impressions and flavor scores to see which bean had the most favorable tastes:
 * **Holler Mountain** won best espresso for its favored smooth and buttery flavor.
-* **Hair Bender** won top AeroPress brew, mostly for its unique complex flavors contained with a light touch.
+* **Hair Bender** won top AeroPress brew, mostly for its unique complex flavors contained in a light brew.
 * **Indonesia Sulawesi Toarco Toraja** won for pour over, based on the very powerful but earthy "in your face" taste many of us found it to have.
 * **Guatemala Finca El Injerto** came out on top as the favorite in the office, but primarily due to the fact that it tasted great independent of brewing method.
 
