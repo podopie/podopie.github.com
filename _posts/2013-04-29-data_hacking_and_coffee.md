@@ -69,10 +69,10 @@ Bean Results
 ------------
 
 Given the top three words that defined each bean, I used the impressions and flavor scores to see which bean had the most favorable tastes:
-* <strong>Holler Mountain</strong> won best espresso for its favored deep and smooth flavor.
-* <strong>Hair Bender</strong> won top AeroPress brew, mostly for its unique complex flavors contained with a light touch.
-* <strong>Indonesia Sulawesi Toarco Toraja</strong> won for pour over, based on the very powerful but earthy "in your face" taste many of us found it to have.
-* <strong>Guatemala Finca El Injerto</strong> came out on top as the favorite in the office, but primarily due to the fact that it tasted great independent of brewing method.
+* **Holler Mountain** won best espresso for its favored deep and smooth flavor.
+* **Hair Bender** won top AeroPress brew, mostly for its unique complex flavors contained with a light touch.
+* **Indonesia Sulawesi Toarco Toraja** won for pour over, based on the very powerful but earthy "in your face" taste many of us found it to have.
+* **Guatemala Finca El Injerto** came out on top as the favorite in the office, but primarily due to the fact that it tasted great independent of brewing method.
 
 Conclusions
 -----------
