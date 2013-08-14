@@ -25,8 +25,5 @@ $('.h-icon').click(function(){
     $('.blogs').addClass('position1');
     $('.portfolio').addClass('position2');
     $('.findme').addClass('position3');
-  } else {
-//  raise some error here, because you darn broke my website
-//  console.log('Error: can\'t place' + activeState);
   }
 })
