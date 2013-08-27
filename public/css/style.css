@@ -18,8 +18,7 @@ body {
 }
 .card {
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
-  margin-bottom: 50px;
-  margin-top: 50px;
+  margin: 50px 0;
   overflow-y: hidden;
   width:470px;
 }
