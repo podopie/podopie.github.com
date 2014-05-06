@@ -179,9 +179,19 @@ footer {
   font-weight: 400;
   letter-spacing: -2px;
 }
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+label.center {
+  display: block;
+  font-size: 13px;
+  text-align: center;
+}
 /* 404 */
 .fourohfour p {
   text-align: center;
-  font-family:Verdana,Geneva,'DejaVu Sans',sans-serif;
+  font-family:'DejaVu Sans',Verdana,Geneva,sans-serif;
   font-size: 500%;
 }

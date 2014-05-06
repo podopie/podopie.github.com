@@ -11,8 +11,8 @@ Preparation
 -----------
 We built a small front end web app using Meteor to store tastings data in MongoDB. Over the course of two mornings, we grinded and brewed roughly 36oz of our 48oz of beans, about 80 data samples in total. Given our Stumptown preferences at the office, we trialed four of their beans:
 
-* Hair Bender (blend) 
-* Holler Mountain (blend) 
+* Hair Bender (blend)
+* Holler Mountain (blend)
 * Indonesia Sulawesi Toarco Toraja (single origin)
 * Guatemala Finca El Injerto (single origin)
 
@@ -50,7 +50,8 @@ On the results page (or the image above), the stacked bar graph represents "over
 I then determined which words best described which beans. I decided to use <a href="http://en.wikipedia.org/wiki/Tf%E2%80%93idf">tf-idf</a>, namely for its ability to (hopefully) find uniqueness of words in a given document; in this case, cuppings specific to a bean. This approach let me see how often words were used to describe beans, but also how often those same words were used to describe other beans as well. For example, bitter could have easily described all the beans, so it would have had a low uniqueness score for each bean. In the results, I found it interesting that even with the inverse counterweight, harsh still showed up for two different beans.
 
 Tf-idf wasn't too difficult to implement in JavaScript, though I conjoined with it a sorted object function commonly seen on StackOverflow. Code here (on Github, early on, in the coffeeMoto namespace):
-<pre>generateUniques: function(cupping_array) {
+{% highlight js %}
+generateUniques: function(cupping_array) {
   var tf_idf = {};
   Tastings.find().forEach(function(i) {
     total = Cuppings.find().count();
@@ -68,12 +69,12 @@ Tf-idf wasn't too difficult to implement in JavaScript, though I conjoined with 
     sortable.sort(function(a, b) {return a[1] - b[1]});
   }
   unique_limit = []
-  unique_limit.push(sortable[sortable.length - 1][0])
-  unique_limit.push(sortable[sortable.length - 2][0])
-  unique_limit.push(sortable[sortable.length - 3][0])
+  [1, 2, 3].forEach(function(i){
+    unique_limit.push(sortable[sortable.length - i][0])
+  })
   return unique_limit;
 }
-</pre>
+{% endhighlight %}
 
 Bean Results
 ------------
