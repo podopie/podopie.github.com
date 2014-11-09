@@ -2246,7 +2246,7 @@ In&nbsp;[185]:
 <span class="kn">import</span> <span class="nn">urllib2</span>
 <span class="kn">import</span> <span class="nn">StringIO</span>
 
-<span class="k">class</span> <span class="nc">NYTimesCounter</span><span class="p">():</span>
+<span class="k">class</span> <span class="nc">NYTimesCounter</span><span class="p">(object):</span>
 
     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="c"># initializes the object</span>
@@ -2303,7 +2303,7 @@ In&nbsp;[185]:
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
-&lt;type &apos;instance&apos;&gt;
+&lt;class &apos;__main__.NYTimesCounter&apos;&gt;
 Gender 0: 168265
 Gender 1: 290176
 Signin 0: 321335
@@ -2599,19 +2599,6 @@ Signed_In
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>NEXT STEPS</p>
-<p>What's the objective? We want to see if there is a correlation with age, gender, and Signed_Out with click_thru_rate, measured as clicks / Impressions</p>
-<p>other ways to fiddle around with pandas (slicing) create a function that defines click through rate for each row</p>
-<p>introduction to matplotlib</p>
-<p>plot each and everything</p>
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -6916,9 +6903,32 @@ SZI0Ov8Cp5CFegp/+8MAAAAASUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="independent-practice">Independent Practice</h2>
+<p>Practice doing much of the same functionality we did today with three different data sets from <a href="http://vincentarelbundock.github.io/Rdatasets/datasets.html">here</a> in small groups of 3 or 4.</p>
+<p>Primarily, your goals are to:</p>
+<ul>
+<li>Show how to load a csv file into python</li>
+<li>Use pandas to understand the numerical portions of the data</li>
+<li>Use matplotlib to visualize the data</li>
+<li>Use scikit-learn to fit the data to some dependent feature (y)</li>
+</ul>
+<p>Summarise your work with the following questions:</p>
+<ul>
+<li>What is the dataset about? What do the columns mean?</li>
+<li>What does the dataset look like?</li>
+<li>What data relationships can you find?</li>
+<li>Given those relationships/correlations, what does that help explain or help you understand about the data?</li>
+</ul>
+<p>We will come back as a class and have each group present their answers to the above to one of the data sets they explored.</p>
+
 <h2 id="next-steps">Next Steps</h2>
-<p>Practice doing much of the same functionality we did today with three different data sets from <a href="http://vincentarelbundock.github.io/Rdatasets/datasets.html">here</a>.</p>
-<p>Primarily, your goals are to: * Show how to load a csv file into python * Use pandas to understand the numerical portions of the data * Use matplotlib to visualize the data * Use scikit-learn to fit the data to some dependent feature (y)</p>
+<p>I encourage you to pick up and start reading the following books to continue learning about programming and data analytics.</p>
+
+<p><strong>Still uncomfortable with Python?</strong><br />That's okay! Continue practicing your python basics with <a href='http://learnpythonthehardway.org/book/'>Learn Python the Hard Way</a>. It'll strengthen your chops. Do it multiple times&mdash;you'll keep learning!</p>
+<p><strong>Feel like Pandas can revolutionize how you work?</strong><br />Purchase and read Wes McKinney's <a href='http://shop.oreilly.com/product/0636920023784.do'>Python for Data Analysis</a>. It'll get you cranking on everything Wes did with Pandas and why it was designed the way it was.</p>
+<p><strong>Want to dig into why Data Science?</strong><br />Check out Provost and Fawcett's <a href='http://www.amazon.com/Data-Science-Business-data-analytic-thinking/dp/1449361323'>Data Science for Business</a>. You'll start understanding more about the business practice of Data Science (vs the academic side) and some fundamentals about algorithm and stats application.</p>
+
+
 </div>
 </div>
 </div>
