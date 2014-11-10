@@ -5,6 +5,11 @@ body, div, header, nav, footer, p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
   overflow-x: hidden;
   text-rendering:optimizeLegibility;
 }
+pre {
+  background-color: #f8f8f8;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
+  padding: 5px 15px;
+}
 header, nav, article, section, footer {
   display: block;
 }
@@ -17,7 +22,7 @@ body {
   width: 470px;
 }
 .card {
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
   margin: 50px 0;
   overflow-y: hidden;
   width:470px;
@@ -31,7 +36,7 @@ header {
 header .overlay {
   background: #000;
   background: rgba(0, 0, 0, 0.5);
-  bottom: 0px;
+  bottom: 0;
   height: 60px;
   overflow-y: hidden;
   position: absolute;
@@ -43,8 +48,8 @@ header h1 {
   margin-left: 10px;
 }
 nav {
-  background: #fff;
-  border-bottom: 2px #999 solid;
+  background: #5677fc;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12);
   height: 45px;
   overflow-y: hidden;
   width: 470px;
@@ -55,13 +60,7 @@ nav ul li {
   line-height: 3;
   list-style: none;
   margin: 5px 15px;
-}
-nav .active {
-  border-bottom: 2px #00c0f4 solid;
-}
-article {
-  width: 470px;
-  background: #e7e7e7;
+  color: #fff;
 }
 h1, h2 {
   font-weight: 200;
@@ -69,7 +68,7 @@ h1, h2 {
 }
 p, ul li {
   font-weight: 300;
-  color: #777;
+  color: rgba(0, 0, 0, 0.87);
   line-height: 1.5;
 }
 strong {
@@ -77,7 +76,7 @@ strong {
   color: #333;
 }
 a {
-  color: #00c0f4;
+  color: #00bcd4;
   text-decoration: none;
 }
 a:hover {
@@ -88,18 +87,24 @@ section {
   position: relative;
 }
 article {
+  width: 470px;
+  background: rgba(255, 255, 255, 1);
   height: 100%;
   position: absolute;
-  margin: 1px 0;
-  border-bottom: 2px #00c0f4 solid;
   float: left;
   overflow: hidden;
 }
-article h2, article p {
+article h2 {
+  font-size: 24px;
   margin: 12px 25px;
+  color: rgba(0, 0, 0, 0.54);
+}
+article p {
+  margin: 12px 25px;
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 300;
 }
 .position {
-  width: 470px;
   -webkit-transition: all .3s ease-out;
   -moz-transition: all .3s ease-out;
   -o-transition: all .3s ease-out;
@@ -127,7 +132,7 @@ article h2, article p {
 .position.position6 {
   left: 300%;
 }
-.cover{
+.cover {
   background: #fff;
   border: none;
   height: 800px;
@@ -147,7 +152,7 @@ footer {
 }
 
 /* Blog stuff */
-.blog {
+body.blog {
   width: 590px;
 }
 .blog-container {
