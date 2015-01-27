@@ -153,7 +153,7 @@ footer {
 
 /* Blog stuff */
 body.blog {
-  width: 590px;
+  width: 670px;
 }
 .blog-container {
   margin: 20px;
@@ -166,6 +166,7 @@ body.blog {
 }
 .post p,
 .home-posts li {
+  font-size: 18px;
   margin: 12px 0;
 }
 .post li {
@@ -193,6 +194,17 @@ label.center {
   display: block;
   font-size: 13px;
   text-align: center;
+}
+table {
+  padding: 1em 0;
+}
+table th,
+table td {
+  padding: 0 2em 0 0;
+}
+table strong {
+  font-weight: 500;
+  text-transform: uppercase;
 }
 /* 404 */
 .fourohfour p {
