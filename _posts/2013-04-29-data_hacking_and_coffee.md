@@ -3,13 +3,11 @@ layout: post
 title: Data Hacking and Coffee
 ---
 
-{{ page.title }}
-================
 This past week a coworker of mine and I decided to make coffee for everyone at our office as a hackathon project. The real project led to data analysis on coffee tastings, or "cuppings", with the end goal to expose the best coffees for us at work, focused on the most common brewing methods available in our office. In any case, it ended up being a really fun project, with some dramatic learnings about the simple value of yes/no questions in data collection.
 
-Preparation
------------
-We built a small front end web app using Meteor to store tastings data in MongoDB. Over the course of two mornings, we grinded and brewed roughly 36oz of our 48oz of beans, about 80 data samples in total. Given our Stumptown preferences at the office, we trialed four of their beans:
+## Preparation
+
+We built a small front end web app using Meteor to store tastings data in MongoDB. Over the course of two mornings, we grinded and brewed roughly 36 oz of our 48 oz of beans, about 80 data samples in total. Given our Stumptown preferences at the office, we trialled four of their beans:
 
 * Hair Bender (blend)
 * Holler Mountain (blend)
@@ -29,14 +27,13 @@ Each cup (4 beans x 3 methods = 12 cups) had a thumbs up/thumbs down for four im
 * acidity,
 * and body
 
-
-Then, out of 25 prepicked words from assorted websites that describe flavors of coffee, each taster picked as many words as they wanted to describe their tasting. They didn't know what bean they were trying, but were informed around brewing methods each day.
+Then, out of 25 picked words from assorted websites that describe flavors of coffee, each taster picked as many words as they wanted to describe their tasting. They didn't know what bean they were trying, but were informed around brewing methods each day.
 
 You can follow along the user experience, including all the words we used, <a href="http://coffeemoto.meteor.com">here</a>.
 
-Analysis
---------------------------
-Initially, I wanted to identify the value of a flavor, broken down by each impression type (0 to 1). To find an answer, I grouped cuppings by flavor and broke down the appropriate scores by averaging each impression. 
+## Analysis
+
+Initially, I wanted to identify the value of a flavor, broken down by each impression type (0 to 1). To find an answer, I grouped cuppings by flavor and broke down the appropriate scores by averaging each impression.
 
 <a href="/public/images/cuppings_data.png"> <img src="/public/images/cuppings_data.png" width="550" height="172" /> </a>
 
@@ -45,7 +42,6 @@ On the results page (or the image above), the stacked bar graph represents "over
 * A "positive" impression: score of .7 or above (large rectangle)
 * A "neutral" impression: score of .4 to .6 (square rectangle)
 * A "negative" impression: score of .3 or below (small-nil rectangle)
-
 
 I then determined which words best described which beans. I decided to use <a href="http://en.wikipedia.org/wiki/Tf%E2%80%93idf">tf-idf</a>, namely for its ability to (hopefully) find uniqueness of words in a given document; in this case, cuppings specific to a bean. This approach let me see how often words were used to describe beans, but also how often those same words were used to describe other beans as well. For example, bitter could have easily described all the beans, so it would have had a low uniqueness score for each bean. In the results, I found it interesting that even with the inverse counterweight, harsh still showed up for two different beans.
 
@@ -76,8 +72,7 @@ generateUniques: function(cupping_array) {
 }
 {% endhighlight %}
 
-Bean Results
-------------
+## Bean Results
 
 Given the top three words that defined each bean, I used the impressions and flavor scores to see which bean had the most favorable tastes:
 * **Holler Mountain** won best espresso for its favored smooth and buttery flavor.
@@ -86,8 +81,7 @@ Given the top three words that defined each bean, I used the impressions and fla
 * **Guatemala Finca El Injerto** came out on top as the favorite in the office, but primarily due to the fact that it tasted great independent of brewing method.
 
 
-Conclusions
------------
+## Conclusions
 
 Never forget the power of simple yes/no questions in your application. Simply by having colleagues describe coffee and give a thumbs up or down, I was able to (very roughly) generate incredibly useful data for future coffee direction in the office. And I think eventually, we'll find our buttery chocolate herbal coffee bean (that is, until our tastes change).
 

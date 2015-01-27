@@ -3,16 +3,13 @@ layout: post
 title: Playing with Jekyll
 ---
 
-{{ page.title }}
-================
-
 Well, this is a thing now.
 
 
 Let's consider this a test post for Jekyll. Putting this together using <a href="https://help.github.com/articles/using-jekyll-with-pages">Github Pages</a> was really minimal work, at best. Most of the work was reorganization of the heypodo github repo, and then applying all the markup and markdown. Right now, the heypodo splash is set as index.html, and the blog's home (where it fills in the most recent posts) is blog.html. I plan on spending more time with Jekyll to get all of the blog under a blog subdirectory (and it really shouldn't take much more work), but like a man building a brand new house, it's great to document the work as it gets built.
 
 
-If you see this written, it's because I literally just started working on it... or you are trolling through my old commits. Kudos to you. This post will get edited a few more times while I keep working on Jeykll, finetuning the subdirectory organization, get a blog style that I really like (and complements the heypodo splash), etc.
+If you see this written, it's because I literally just started working on it... or you are trolling through my old commits. Kudos to you. This post will get edited a few more times while I keep working on Jeykll, fine tuning the subdirectory organization, get a blog style that I really like (and complements the heypodo splash), etc.
 
 
 What is this blog going to be about?
