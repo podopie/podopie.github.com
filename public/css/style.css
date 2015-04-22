@@ -20,10 +20,11 @@ body {
   font-family: 'helvetica neue', helvetica, arial, sans-serif;
   margin: auto;
   width: 470px;
+  background-color: #f9f9f9;
 }
 .card {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
-  margin: 50px 0;
+  margin: 20px 0;
   overflow-y: hidden;
   width:470px;
 }
@@ -66,10 +67,15 @@ h1, h2 {
   font-weight: 200;
   color: #333;
 }
-p, ul li {
+p,
+ul li,
+ol li {
   font-weight: 300;
   color: rgba(0, 0, 0, 0.87);
-  line-height: 1.5;
+  line-height: 1.6;
+}
+li {
+  margin-left: 1em;
 }
 strong {
   font-weight: 400;
@@ -148,15 +154,28 @@ article p {
 }
 footer {
   font-size: 13px;
-  text-align: center;
+  text-align: left;
+  clear: both;
+  margin: 10px 0;
 }
 
 /* Blog stuff */
 body.blog {
-  width: 670px;
+  width: 1180px;
+  margin-left: 0;
+}
+.nav-container {
+  width: 320px;
+  padding: 20px;
+  float: left;
 }
 .blog-container {
-  margin: 20px;
+  padding: 10px;
+  margin: 10px;
+  float: left;
+  width: 660px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
+  background-color: #fff;
 }
 .secondary {
   font-size: 18px;
@@ -164,12 +183,16 @@ body.blog {
 .post, .home-posts {
   margin: 20px 0;
 }
-.post p,
+.nav-container p,
 .home-posts li {
+  font-size: 14px;
+}
+.post p {
   font-size: 18px;
   margin: 12px 0;
 }
 .post li {
+  font-size: 18px;
   list-style-position: inside;
 }
 .post h1,

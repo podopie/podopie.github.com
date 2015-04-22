@@ -16,10 +16,18 @@
   <link href="/public/css/syntax.min.css" rel="stylesheet" media="screen">
 </head>
 <body class="blog">
+  <div class="nav-container home-posts">
+    <h1><a href="/">Hey, Podo</a></h1>
+      <p><strong>coffee, data, and sometimes it overlaps</strong></p>
+      <ul class="posts">
+        {% for post in site.posts limit:10 %}
+          <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+      </ul>
+      <footer>2015</footer>
+  </div>
   <div class="blog-container">
-    <h1><a href="/">Hey, Podo</a><span class="secondary"> &mdash; <a href="/blog/index.html">Blog</a></span></h1>
-    {{ content }}
-    <footer>Copyright 2015 HeyPodo.</footer>
+      {{ content }}
   </div>
 </body>
 <script type="text/javascript">
