@@ -39,3 +39,10 @@ plt.figure()
 plt.title('Compute Time of Least Squares: $O(k^2n)$')
 plt.xlabel('$k^2n$')
 plt.ylabel('compute units')
+
+""" Additional Notes
+https://wiki.python.org/moin/TimeComplexity
+http://stackoverflow.com/questions/2307283/what-does-olog-n-mean-exactly
+https://www.interviewcake.com/big-o-notation-time-and-space-complexity
+http://bigocheatsheet.com/
+"""
