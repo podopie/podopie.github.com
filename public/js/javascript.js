@@ -2,7 +2,7 @@ $('.h-icon').click(function(){
   var a = 'active',
     c = 'class',
     p = 'position',
-    s = ['.about', '.blog', '.portfolio', '.findme'],
+    s = ['.about', '.portfolio', '.findme'],
     gr = function(x,i){
     return $(x).attr(c).split(' ')[i];
   }
