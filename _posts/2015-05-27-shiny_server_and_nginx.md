@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting up Shiny, Shiny-Server, and Nginx on EC2
+title: Setting up Shiny-Server and Nginx on EC2
 tags:
     - r
 ---
