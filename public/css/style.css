@@ -30,7 +30,7 @@ body {
 }
 header {
   width: 470px;
-  height: 230px;
+  height: 210px;
   position: relative;
   background: url(/public/images/background-mini.jpg) no-repeat center center;
 }
@@ -95,7 +95,7 @@ a:hover {
   text-decoration: underline;
 }
 section {
-  min-height: 410px;
+  min-height: 290px;
   position: relative;
 }
 article {
