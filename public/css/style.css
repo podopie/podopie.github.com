@@ -18,18 +18,18 @@ header, nav, article, section, footer {
 }
 body {
   font-family: 'helvetica neue', helvetica, arial, sans-serif;
-  margin: auto;
-  width: 470px;
+  margin: 0 auto 0 20px;
+  width: 350px;
   background-color: #f9f9f9;
 }
 .card {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
   margin: 20px 0;
   overflow-y: hidden;
-  width: 470px;
+  width: 350px;
 }
 header {
-  width: 470px;
+  width: 350px;
   height: 210px;
   position: relative;
   background: url(/public/images/background-mini.jpg) no-repeat center center;
@@ -53,7 +53,7 @@ nav {
   box-shadow: 0 6px 5px rgba(0, 0, 0, 0.12);
   height: 45px;
   overflow-y: hidden;
-  width: 470px;
+  width: 350px;
   position: relative;
   z-index: 100;
 }
@@ -99,7 +99,7 @@ section {
   position: relative;
 }
 article {
-  width: 470px;
+  width: 350px;
   background: rgba(255, 255, 255, 1);
   height: 100%;
   position: absolute;
