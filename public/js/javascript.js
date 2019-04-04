@@ -1,3 +1,4 @@
+$('footer').html(new Date().getFullYear());
 $('.h-icon').click(function(){
   var a = 'active',
     c = 'class',
