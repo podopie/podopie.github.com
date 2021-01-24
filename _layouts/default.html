@@ -18,7 +18,8 @@
 <body class="blog">
   <div class="nav-container home-posts">
     <h1><a href="/">Hey, Podo</a></h1>
-      <p><strong>coffee, data, and sometimes it overlaps</strong></p>
+      <p><strong>coffee, data, and running, not in that order</strong></p>
+      <p>Latest 10 posts:</p>
       <ul class="posts">
         {% for post in site.posts limit:10 %}
           <li><a href="{{ post.url }}">{{ post.title }}</a></li>
