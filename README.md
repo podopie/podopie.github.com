@@ -3,8 +3,13 @@ Heypodo Repo
 
 What is this
 ------------
-Just over a year ago, I decided to write my personal website. Now, it hosts my blog.
+Musings. For 2021, I plan on writing about:
 
+* Coffee
+* Running
+* Managering
+* Data
+* Life
 
 Why github
 ----------
