@@ -13,7 +13,7 @@ Last Updated 23 October 2021
 
 ## 1. Nike ZoomX Invicible Run - Easy and Long Runs
 
-Size 12; 333g
+Size 12, 333g
 
 These shoes make a squishy noise as I walk down the apartment hallway in them, and I love it. The Pegasus 36 was one of my all time favorite daily trainers. These shoes are nothing like that, yet share a comfort and familiarity I have not gotten out of other shoes I've tried in this category. They look weird and feel like you are walking on a platform, yet on a run they feel like an actual pillow. What's odd to me is that they are categorised as easy long run shoes. I've taken them down to pretty fast paces (4:40/km or 7:30/mi) and they have an incredible energy to them that doesn't hold you back. There's only one true complaint here; I generally wear a 12.5 and when I got these in the store the salesperson insisted I size down to a 12. After one long run it was clear this was a mistake (both in width and length), so if I ever get another pair, they will likely be 12.5s. I'm excited to see what Nike does with a round two, though Nike has a tendency to take their best shoes and never bring them back (cries in Pegasus Turbos).
 
